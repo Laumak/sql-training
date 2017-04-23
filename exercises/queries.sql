@@ -21,3 +21,8 @@ SELECT p.name, p.age
 SELECT p.name, p.age
   FROM people p
     WHERE p.age BETWEEN 10 AND 40;
+
+-- LIKE
+SELECT p.name, p.age
+  FROM people p
+    WHERE p.name LIKE "%ar%";
