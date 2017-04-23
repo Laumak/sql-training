@@ -44,3 +44,12 @@ SELECT COUNT(*) as NumOfPeople
 -- Counting by column, excludes null values
 SELECT COUNT(p.age) as NumOfPeopleWithAge
   FROM people p;
+
+
+-- MIN
+SELECT MIN(p.age) as LowestAge
+  FROM people p;
+
+-- MAX
+SELECT MAX(p.age) as HighestAge
+  FROM people p;
