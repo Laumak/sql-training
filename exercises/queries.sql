@@ -62,3 +62,7 @@ SELECT SUM(p.age) as CombinedAges
 -- AVG
 SELECT AVG(p.age) as AverageAge
   FROM people p;
+
+-- Functions with qualifiers (DISTINCT, ALL etc.)
+SELECT COUNT(DISTINCT p.name) as AllUniqueNames
+  FROM people p;
