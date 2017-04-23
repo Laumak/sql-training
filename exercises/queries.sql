@@ -58,3 +58,7 @@ SELECT MAX(p.age) as HighestAge
 -- SUM
 SELECT SUM(p.age) as CombinedAges
   FROM people p;
+
+-- AVG
+SELECT AVG(p.age) as AverageAge
+  FROM people p;
