@@ -66,3 +66,16 @@ SELECT AVG(p.age) as AverageAge
 -- Functions with qualifiers (DISTINCT, ALL etc.)
 SELECT COUNT(DISTINCT p.name) as AllUniqueNames
   FROM people p;
+
+
+-- GROUP BY
+-- Show the count of names and their associated names.
+SELECT COUNT(p.name) as NameCount, p.name
+  FROM people p
+    GROUP BY p.name;
+
+-- Show the count of names and their associated names if 2 or more names.
+SELECT COUNT(p.name) as NameCount, p.name
+  FROM people p
+    GROUP BY p.name
+      HAVING NameCount >= 2;
