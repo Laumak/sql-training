@@ -37,6 +37,8 @@ SELECT p.name, p.age
     ORDER BY p.name;
 
 
+-- SQL Functions
+
 -- COUNT (* counts all rows, including null values)
 SELECT COUNT(*) as NumOfPeople
   FROM people p;
@@ -45,11 +47,14 @@ SELECT COUNT(*) as NumOfPeople
 SELECT COUNT(p.age) as NumOfPeopleWithAge
   FROM people p;
 
-
 -- MIN
 SELECT MIN(p.age) as LowestAge
   FROM people p;
 
 -- MAX
 SELECT MAX(p.age) as HighestAge
+  FROM people p;
+
+-- SUM
+SELECT SUM(p.age) as CombinedAges
   FROM people p;
