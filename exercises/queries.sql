@@ -16,3 +16,8 @@ SELECT p.name, p.age
 SELECT p.name, p.age
   FROM people p
     WHERE p.age IS NOT null;
+
+-- BETWEEN
+SELECT p.name, p.age
+  FROM people p
+    WHERE p.age BETWEEN 10 AND 40;
