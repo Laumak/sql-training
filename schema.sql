@@ -5,8 +5,8 @@ INSERT INTO people
 VALUES
   (1, "Lauri", NULL, 1),
   (2, "Mariel", 22, 1),
-  (3, "Keimo", 52, 2),
-  (4, "Keimo", 12, 1),
+  (3, "Keimo", 52, NULL),
+  (4, "Keimo", 12, 8),
   (5, "Aada", 6, 3),
   (6, "Tarja", 38, 2)
 ;
